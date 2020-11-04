@@ -1,0 +1,32 @@
+{
+  "name": "@area73/eslint-config",
+  "version": "0.0.1",
+  "description": "eslint config for area73 JS projects",
+  "main": "index.js",
+  "skipBuild": true,
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "confusing-browser-globals": "^1.0.9",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-lodash": "^7.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "eslint-plugin-simple-import-sort": "^5.0.3"
+  },
+  "peerDependencies": {
+    "eslint": ">= 6.3.0",
+    "prettier": ">= 1.18.2"
+  },
+  "scripts": {
+    "test": "true",
+    "dist": "true",
+    "dist:watch": "true",
+    "prepublishOnly": "npm run dist",
+    "prerelease": "npm version prerelease"
+  }
+}
